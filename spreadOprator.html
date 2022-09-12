@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>spreadOperator</title>
+</head>
+<body>
+    <script>
+        //spread oprator use for array [1,2,3,4 ] for array values ;
+        function  sum(name,...args){
+            console.log(arguments);
+            document.write(`Hello ${name} : `);
+            let sum=0;
+            for(let i in args){
+                sum +=args[i];}
+            document.write(sum); }
+            var arr=[45,78,79,72];
+            sum("rakesh kumar ", ...arr);
+    </script>
+</body>
+</html>

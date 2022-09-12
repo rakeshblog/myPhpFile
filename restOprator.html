@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>restOptator</title>
+</head>
+<body>
+<script>
+    // rest opratore means ...argument;
+    function sum(){
+        console.log(arguments);
+        let sum=0;
+        for(let i in arguments){
+            sum += arguments[i]; }
+        document.write(sum +"<br>");  }
+    sum(45, 40, 80);
+    sum(45,47); 
+    // hear sum("may name is rakesh ", 14,45,45); here error print then;
+    function welcome(name,course,...args){
+        console.log(arguments);
+        document.write(`Hello ${name} course of ${course}: `);
+        let sum=0;
+        for(let i in args){
+            sum += args[i]; }
+        document.write(sum + "<br>");
+    }
+    welcome ("Rakesh kumar","Btech", 45,78,90);
+    welcome("Ram kumar ","BCA", 55,78,);
+
+    
+    </script>
+</body>
+</head>
